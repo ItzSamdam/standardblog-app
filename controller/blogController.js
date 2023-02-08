@@ -138,7 +138,6 @@ const getPostbyId = async (req, res, next) => {
         await posts.save()
         res.status(200).json({
             status: true,
-            message: "post retrieved",
             data: posts
         })
     } catch (error) {

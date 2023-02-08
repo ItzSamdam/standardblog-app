@@ -2,6 +2,7 @@
 const mongoose = require('mongoose');
 const CONFIG = require('../config/config');
 const logger = require('../middleware/logging/logger')
+const {error} = require("winston");
 
 
 function connectToDataBase() {
